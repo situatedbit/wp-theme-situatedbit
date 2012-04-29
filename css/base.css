@@ -1,0 +1,130 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* sitautedbit start */
+body {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+h1 { font-size: 2.25em;  /* 16x2.25=36 */ }
+h2 { font-size: 1.5em;   /* 16x1.5=24 */ }
+h3 { font-size: 1.125em; /* 16x1.125=18 */ }
+h4 { font-size: 0.875em; font-style: italic; /* 16x0.875=14 */ }
+
+h1,
+h2,
+h3,
+h4 { 
+  font-family: 'Bree Serif', serif;
+  margin-bottom: 0.5em; 
+}
+
+p,
+ol,
+ul,
+blockquote {
+  margin-bottom: 1em;
+  max-width: 30em;
+}
+
+a {
+  text-decoration: none;
+  color: #720040;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#main {
+  width: 100%;
+}
+
+#header #logo {
+  font-size: 3em;
+}
+
+a#topofpage {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.post {
+  margin-top: .5em;
+}
+
+  .post .tags li {
+    display: inline;
+  }
+
+  .post .tags li:before {
+    content: '|';
+    margin: auto .5em;
+  }
+
+  .post .tags li:first-child:before {
+    content: '';
+    margin: 0px;
+  }
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+} /* media query: 1024 */
+
+@media screen and (max-width: 768px) {
+} /* media query: 768 */
+
+@media screen and (max-width: 320px) {
+} /* media query: 320 */
+
+/* 1200px and up */
+@media screen and (min-width: 1200px) {
+} /* media query: 1200*/
