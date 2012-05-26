@@ -1,7 +1,7 @@
 <?
   global $content_class;
   global $body_class;
-  
+
   if(!isset($content_class)) $content_class = '';
   if(!isset($body_class)) $body_class = '';
 
@@ -51,7 +51,7 @@
     <a id="topofpage" name="top">Top of Page</a>
     <div id="header">
       <h1 id="logo"><a href="<?php echo site_url() ?>">Situated Bit</a></h1>
-      <nav id="primary-menu"></nav>
+      <a id="menu-link" href="#menu"><img src="<?php echo get_stylesheet_directory_uri() ?>/css/images/menu.png" alt="Page Menu" /></a>
     </div> <!-- #header -->
     <div id="main">
-<!-- end: header --> 
+<!-- end: header -->
