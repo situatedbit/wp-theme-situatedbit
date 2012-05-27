@@ -106,15 +106,12 @@ a:hover {
   margin: auto;
 }
 
-#main {
-  margin-top: 4em;
-}
-
 #header {
   padding-left: 2%;
   padding-right: 2%;
   padding-top: .25em;
   padding-bottom: .25em;
+  margin-bottom: 1em;
   overflow: visible;
   height: 3em;
 }
@@ -146,6 +143,25 @@ a#topofpage, a#menu-anchor {
   margin-top: .5em;
   margin-bottom: 2em;
 }
+
+  .post .alignleft {
+    float: left;
+    margin-right: 1em;
+  }
+
+  .post .alignright {
+    float: right;
+    margin-left: 1em;
+  }
+
+  .post .aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .post .wp-caption-text {
+    font-size: .75em;
+  }
 
   .post .post-meta {
     display: inline;
@@ -212,10 +228,6 @@ a#topofpage, a#menu-anchor {
     width: 100%;
   }
 
-  #main {
-    margin-top: 3em;
-  }
-
   #header {
     border-bottom: 1px solid #afafaf;
     background-color: #dfdfdf;
@@ -234,7 +246,7 @@ a#topofpage, a#menu-anchor {
     }
 
   .post-content a, .post-footer a {
-    border-bottom: 1px dashed #720040;
+    text-decoration: underline;
   }
 
   .post-content a:hover, .post-footer a:hover {
