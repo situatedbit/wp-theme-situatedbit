@@ -131,6 +131,11 @@ a:hover {
   }
 
   #header #menu-link img {
+    border: 1px solid #afafaf;
+    background-color: #dfdfdf;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
   }
 
 a#topofpage, a#menu-anchor {
