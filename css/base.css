@@ -149,6 +149,20 @@ a#topofpage, a#menu-anchor {
   margin-bottom: 2em;
 }
 
+  .post li {
+    list-style-position: inside;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+  }
+
+  .post ul > li {
+    list-style-type: square;
+  }
+
+  .post ol > li {
+    list-style-type: decimal;
+  }
+
   .post .alignleft {
     float: left;
     margin-right: 1em;
@@ -186,6 +200,8 @@ a#topofpage, a#menu-anchor {
 
   .post .tags li {
     display: inline;
+    padding-left: 0;
+    text-indent: 0;
   }
 
   .post .tags li:before {
