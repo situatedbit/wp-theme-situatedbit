@@ -122,6 +122,9 @@ a:hover {
     margin-bottom: 0;
     font-size: 3em;
     width: 90%;
+    text-indent: 55px;
+    background-image: url(images/logo-33.png);
+    background-repeat: no-repeat;
   }
 
   #header #menu-link {
