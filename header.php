@@ -22,7 +22,7 @@
 
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() ?>/css/images/favicon.ico">
   <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri() ?>/css/images/apple-touch-icon.png">
-  <link href='//fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+  <!--<link href='//fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>-->
   <?php wp_head(); ?>
 </head>
 
@@ -33,10 +33,8 @@
 <!--[if gt IE 9]> <body class="ie"> <![endif]-->
 <!--[if !IE]><!--> <body class=""> <!--<![endif]-->
   <section id="content">
-    <a id="topofpage" name="top">Top of Page</a>
-    <header id="header">
+    <header id="header" class="constrained-layout">
       <h1 id="logo"><a href="<?php echo site_url() ?>">Situated Bit</a></h1>
-      <a id="menu-link" href="#menu"><img src="<?php echo get_stylesheet_directory_uri() ?>/css/images/menu.png" alt="Page Menu" /></a>
     </header> <!-- #header -->
-    <div id="main">
+    <div id="main" class="constrained-layout">
 <!-- end: header -->
