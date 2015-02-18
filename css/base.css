@@ -209,6 +209,7 @@ a:hover {
 #footer {
   background-color: #efefef;
   border-top: 1px solid #bfbfbf;
+  padding-top: .5em;
   width: 100%;
 }
 
@@ -217,30 +218,33 @@ a:hover {
     overflow: auto;
   }
 
-  #footer-logo {
-    clear: left;
+  #footer .menu-footer-container {
     float: left;
-    height: 150px;
-    width: 150px;
-    text-indent: -999999em;
-    background-image: url(images/logo-33.png);
-    background-image: url(images/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 1em;
+    width: 20%;
   }
 
+  #footer #footer-bio-wrapper {
+    float: left;
+    width: 80%;
+  }
+
+    #footer #footer-bio {
+      float: left;
+      width: 60%;
+    }
+
+    #footer #footer-portrait {
+      float: right;
+      width: 40%;
+    }
+
   #footer .menu {
-    margin-left: 150px;
     overflow: auto;
   }
 
   #footer .menu li {
-    width: 99.5%;
-    padding-top: .5em;
-    padding-bottom: .5em;
     margin: auto;
-    margin-bottom: .25em;
+    margin-bottom: 1.25em;
   }
 
     #footer .menu a {
@@ -259,7 +263,21 @@ a:hover {
 } /* media query: 1024 */
 
 @media screen and (max-width: 768px) {
+    #footer #footer-bio {
+      width: 70%;
+    }
+
+    #footer #footer-portrait {
+      width: 30%;
+    }
 } /* media query: 768 */
+
+@media screen and (max-width: 640px) {
+  #footer .menu-footer-container,
+  #footer #footer-bio-wrapper {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 480px) {
   #content {
@@ -285,6 +303,14 @@ a:hover {
 } /* media query: 480 */
 
 @media screen and (max-width: 320px) {
+    #footer #footer-bio {
+      width: 100%;
+    }
+
+    #footer #footer-portrait {
+      width: 0;
+      height: 0;
+    }
 } /* media query: 320 */
 
 
