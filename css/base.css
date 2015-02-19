@@ -206,10 +206,47 @@ a:hover {
     margin-right: .35em;
   }
 
+  .navigation.pagination {
+    overflow: auto;
+    height: 3em;
+    width: 100%;
+  }
+
+  .navigation.pagination h2.screen-reader-text {
+    position: absolute;
+    left: -99999px;
+    width: 0;
+    height: 0;
+    text-indent: -9999px
+  }
+
+  .navigation.pagination .nav-links {
+    float: right;
+  }
+
+  .navigation.pagination .page-numbers {
+    background-color: #efefef;
+    display: block;
+    border: 1px solid #bfbfbf;
+    border-radius: 2px;
+    float: left;
+    margin-right: .5em;
+    padding: 15px;
+  }
+
+  .navigation.pagination .page-numbers.current {
+    background-color: white;
+  }
+
+  .navigation.pagination .page-numbers:hover {
+    background-color: white;
+  }
+
 #footer {
   background-color: #efefef;
   border-top: 1px solid #bfbfbf;
   padding-top: .5em;
+  margin-top: .5em;
   width: 100%;
 }
 

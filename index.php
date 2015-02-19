@@ -5,9 +5,17 @@ get_sidebar();
 
 if ( have_posts() ) : ?>
 
-  <?php while ( have_posts() ) : the_post(); ?>
-    <?php get_template_part( 'content', get_post_format() ); ?>
-  <?php endwhile; ?>
+  <?php
+    while ( have_posts() ) : the_post();
+      get_template_part( 'content', get_post_format() );
+    endwhile;
+
+		the_posts_pagination( array(
+			'prev_text'          => __( 'Previous' ),
+			'next_text'          => __( 'Next'),
+      'screen_reader_text' => __( 'More:' )
+		) );
+  ?>
 
 <?php else : ?>
 
