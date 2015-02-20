@@ -7,7 +7,8 @@
           <p id="footer-bio">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. 
           </p>
-          <img id="footer-portrait" src="">
+          <img id="footer-portrait" src="<?php echo get_template_directory_uri() . '/images/matt-schaefer-portrait.jpg'; ?>" alt="Matt Schaefer portrait">
+
         </div>
         <p class="copyright">&copy; Matt Schaefer</p>
       </div>
