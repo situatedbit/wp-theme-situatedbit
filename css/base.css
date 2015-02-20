@@ -267,12 +267,12 @@ a:hover {
 
     #footer #footer-bio {
       float: left;
-      width: 60%;
+      width: 58%;
     }
 
     #footer #footer-portrait {
       float: right;
-      width: 40%;
+      width: 38%;
     }
 
   #footer .menu {
@@ -327,11 +327,11 @@ a:hover {
   }
 
   #footer #footer-bio {
-    width: 50%;
+    width: 48%;
   }
 
   #footer #footer-portrait {
-    width: 50%;
+    width: 48%;
   }
 } /* media query: 768 */
 
