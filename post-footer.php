@@ -1,6 +1,7 @@
 <footer class="post-footer">
+
   <div class="post-meta">
-    Posted on <?php sb_posted_on(); ?>
+    <div class="post-category"><?php echo sb_categories(get_the_ID()); ?>/</div><?php sb_posted_on(); ?>
   </div>
 
   <?php the_tags('<ul class="tags"><li>', '</li><li>', '</li></ul>') ?>

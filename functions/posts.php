@@ -8,4 +8,20 @@ function sb_posted_on() {
 	);
 }
 
+function sb_categories($post_id) {
+  $categories = get_the_category($post_id);
+  $separator = '|';
+  $return = '';
+
+  if($categories){
+    foreach($categories as $category) {
+      $return .= '<a href="'.get_category_link( $category->term_id ).'" title="' . 
+                 esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . 
+                '">'.$category->cat_name.'</a>'.$separator;
+    }
+  }
+
+  return trim($return, $separator);
+}
+
 ?>

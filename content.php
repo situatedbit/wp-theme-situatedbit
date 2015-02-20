@@ -1,5 +1,6 @@
 <article id="post-<?php the_ID(); ?>" class="post">
 	<header class="post-header">
+
 		<h1 class="post-title">
       <a href="<?php the_permalink(); ?>" title="<?php printf( 'Permalink to %s', the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
         <?php the_title(); ?>
