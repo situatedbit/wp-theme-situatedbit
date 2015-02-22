@@ -34,7 +34,7 @@
 <!--[if !IE]><!--> <body class=""> <!--<![endif]-->
   <section id="content">
     <header id="header" class="constrained-layout">
-      <a href="<?php echo site_url() ?>" title="Situated Bit home"><h1 id="logo">Situated Bit</h1></a>
+      <a href="<?php echo site_url() ?>" title="Situated Bit home"><h1 id="logo"><?php bloginfo( 'name' ); ?></h1></a>
     </header> <!-- #header -->
     <div id="main" class="constrained-layout">
 <!-- end: header -->

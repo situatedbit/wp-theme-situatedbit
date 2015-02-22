@@ -425,18 +425,19 @@ a:hover {
 }
 
 @media screen and (max-width: 480px) {
+  /* scale by factor of .85 */
+  h1 { font-size: 1.9125em; }
+  h2 { font-size: 1.275em; }
+  h3 { font-size: 0.95625em; }
+  h4 { font-size: 0.74375em; font-style: italic; }
+
   #content {
     width: 100%;
   }
 
-  #header {
-    border-bottom: 1px solid #afafaf;
-    background-color: #dfdfdf;
+  #header #logo {
+    font-size: 2.5em;
   }
-
-    #header #logo {
-      font-size: 2.5em;
-    }
 
   #footer .menu {
     height: auto;
