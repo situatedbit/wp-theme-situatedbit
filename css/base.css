@@ -207,6 +207,22 @@ a:hover {
     text-decoration-style: dotted;
   }
 
+  .post-content figure {
+    margin-bottom: 1em;
+  }
+
+  .post-content figure,
+  .post-content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .post-content figcaption {
+    font-size: .85em;
+    font-style: italic;
+  }
+
+
   .post li {
     list-style-position: inside;
     padding-left: 1.5em;
@@ -234,10 +250,6 @@ a:hover {
   .post .aligncenter {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .post .wp-caption-text {
-    font-size: .85em;
   }
 
   .post .full-text-link {
