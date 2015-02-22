@@ -51,10 +51,10 @@ table {
 
 @font-face {
     font-family: 'sorts-mill';
-    src: url('../fonts/sorts-mill/GoudyStM-Italic-webfont.eot');
-    src: url('../fonts/sorts-mill/GoudyStM-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sorts-mill/GoudyStM-Italic-webfont.woff') format('woff'),
-         url('../fonts/sorts-mill/GoudyStM-Italic-webfont.ttf') format('truetype');
+    src: url('fonts/sorts-mill/GoudyStM-Italic-webfont.eot');
+    src: url('fonts/sorts-mill/GoudyStM-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sorts-mill/GoudyStM-Italic-webfont.woff') format('woff'),
+         url('fonts/sorts-mill/GoudyStM-Italic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 
@@ -62,10 +62,10 @@ table {
 
 @font-face {
     font-family: 'sorts-mill';
-    src: url('../fonts/sorts-mill/GoudyStM-webfont.eot');
-    src: url('../fonts/sorts-mill/GoudyStM-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sorts-mill/GoudyStM-webfont.woff') format('woff'),
-         url('../fonts/sorts-mill/GoudyStM-webfont.ttf') format('truetype');
+    src: url('fonts/sorts-mill/GoudyStM-webfont.eot');
+    src: url('fonts/sorts-mill/GoudyStM-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sorts-mill/GoudyStM-webfont.woff') format('woff'),
+         url('fonts/sorts-mill/GoudyStM-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
