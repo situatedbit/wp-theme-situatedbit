@@ -360,9 +360,14 @@ a:hover {
   }
 
     #footer #footer-bio {
+      list-style: none;
       float: left;
       width: 58%;
     }
+
+      #footer #footer-bio li {
+        list-style: none;
+      }
 
     #footer #footer-portrait {
       float: right;
