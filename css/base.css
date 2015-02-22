@@ -138,9 +138,10 @@ a:hover {
 
 #header {
   background-color: white;
-  padding: 1em 0;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 1em 0 .25em 0;
   margin: auto;
-  margin-bottom: 1em;
+  margin-bottom: 1.75em;
 }
 
   #header #logo {
