@@ -15,7 +15,7 @@ function sb_categories($post_id) {
 
   if($categories){
     foreach($categories as $category) {
-      $return .= '<a href="'.get_category_link( $category->term_id ).'" title="' . 
+      $return .= '<a class="post-category" href="'.get_category_link( $category->term_id ).'" title="' . 
                  esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . 
                 '">'.$category->cat_name.'</a>'.$separator;
     }

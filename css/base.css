@@ -140,16 +140,28 @@ a:hover {
   margin-bottom: 2em;
 }
 
-  .post .post-category {
-    font-size: .625em;
-    color: #dfdfdf;
-    margin-bottom: .25em;
-    text-transform: uppercase;
+  .post-header {
+    margin-bottom: 1em;
   }
 
-    .post .post-category a {
-      color: #909090;
+    .post-header h1 {
+      margin-bottom: 0;
+    }  
+
+  .post .post-meta {
+    font-size: .625em;
+    color: #3f3f3f;
+    margin: .25em auto;
+  }
+
+    .post .post-meta a {
+      color: #3f3f3f;
       text-decoration: none;
+    }
+
+    .post .post-meta .post-category {
+      letter-spacing: .03125em;
+      text-transform: uppercase;
     }
 
   .post li {
@@ -185,42 +197,50 @@ a:hover {
     font-size: .75em;
   }
 
-  .post .post-footer {
+  .post .full-text-link {
+    font-style: italic;
+  }
+
+  .post .post-footer,
+  .post .post-footer a {
+    color: #3f3f3f;
     font-size: .85em;
   }
 
-  .post .post-meta {
-    display: inline;
-  }
-
-  .post .tags {
-    display: inline;
-  }
-
-    .post .tags:before {
-      content: '{';
+    .post .tags {
+      display: inline;
     }
 
-    .post .tags:after {
-      content: '}';
-    }
+      .post .post-footer .tags:before,
+      .post .post-footer .tags:after,
+      .post .post-footer .tags li:after {
+        color: #afafaf;
+      }
 
-  .post .tags li {
-    display: inline-block;
-    padding-left: 0;
-    text-indent: 0;
-  }
+      .post .tags:before {
+        content: '';
+      }
 
-  .post .tags li:last-child:after {
-    content: '';
-    margin: 0px;
-  }
+      .post .tags:after {
+        content: '';
+      }
 
-  .post .tags li:after {
-    content: ' |';
-    margin: auto;
-    margin-right: .35em;
-  }
+      .post .tags li {
+        display: inline-block;
+        padding-left: 0;
+        text-indent: 0;
+      }
+
+      .post .tags li:last-child:after {
+        content: '';
+        margin: 0px;
+      }
+
+      .post .tags li:after {
+        content: ' .';
+        margin: auto;
+        margin-right: .35em;
+      }
 
   .navigation.pagination {
     overflow: auto;
