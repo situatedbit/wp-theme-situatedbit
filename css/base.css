@@ -138,25 +138,27 @@ a:hover {
 
 #header {
   background-color: white;
-  height: 3em;
   padding: 1em 0;
   margin: auto;
   margin-bottom: 1em;
-  overflow: auto;
 }
 
   #header #logo {
-    float: left;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 3em;
-    width: 90%;
+    line-height: 1.425em;
     text-indent: 1em;
     background-image: url(images/logo-33.png);
     background-image: url(images/logo.svg);
     background-repeat: no-repeat;
     background-size: auto 1em;
   }
+
+    #header a,
+    #header a:hover {
+      text-decoration: none;
+    }
 
 .post {
   margin-top: .5em;
