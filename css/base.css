@@ -49,8 +49,32 @@ table {
 
 /* sitautedbit start */
 
+@font-face {
+    font-family: 'sorts-mill';
+    src: url('../fonts/sorts-mill/GoudyStM-Italic-webfont.eot');
+    src: url('../fonts/sorts-mill/GoudyStM-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sorts-mill/GoudyStM-Italic-webfont.woff') format('woff'),
+         url('../fonts/sorts-mill/GoudyStM-Italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'sorts-mill';
+    src: url('../fonts/sorts-mill/GoudyStM-webfont.eot');
+    src: url('../fonts/sorts-mill/GoudyStM-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sorts-mill/GoudyStM-webfont.woff') format('woff'),
+         url('../fonts/sorts-mill/GoudyStM-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   background-color: #efefef;
+  font-family: 'sorts-mill', serif;
+  font-weight: normal;
+  font-style: normal; 
   margin: 0;
   padding: 0;
 }
@@ -64,7 +88,6 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Bree Serif', serif;
   margin-bottom: 0.5em;
 }
 
@@ -149,7 +172,7 @@ a:hover {
     }  
 
   .post .post-meta {
-    font-size: .625em;
+    font-size: .85em;
     color: #3f3f3f;
     margin: .25em auto;
   }
@@ -159,9 +182,13 @@ a:hover {
       text-decoration: none;
     }
 
+      .post .post-meta a:hover {
+        text-decoration: underline;
+      }
+
     .post .post-meta .post-category {
-      letter-spacing: .03125em;
-      text-transform: uppercase;
+      /*letter-spacing: .03125em;*/
+      text-transform: lowercase;
     }
 
   .post li {
@@ -194,7 +221,7 @@ a:hover {
   }
 
   .post .wp-caption-text {
-    font-size: .75em;
+    font-size: .85em;
   }
 
   .post .full-text-link {
@@ -204,7 +231,7 @@ a:hover {
   .post .post-footer,
   .post .post-footer a {
     color: #3f3f3f;
-    font-size: .85em;
+/*    font-size: .85em;*/
   }
 
     .post .tags {
@@ -237,7 +264,7 @@ a:hover {
       }
 
       .post .tags li:after {
-        content: ' .';
+        content: ' |';
         margin: auto;
         margin-right: .35em;
       }
