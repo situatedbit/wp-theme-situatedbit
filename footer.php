@@ -5,9 +5,9 @@
         <?php sb_footer_menu(); ?>
         <div id="footer-bio-wrapper">
           <p id="footer-bio">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. 
+            <?php sb_footer_bio_sidebar(); ?>
           </p>
-          <img id="footer-portrait" src="<?php echo get_template_directory_uri() . '/images/matt-schaefer-portrait.jpg'; ?>" alt="Matt Schaefer portrait">
+          <img id="footer-portrait" src="<?php echo get_template_directory_uri() . '/images/matt-schaefer-portrait.jpg'; ?>" alt="Matt Schaefer portrait at the Gamble House, Pasadena, Calif.">
 
         </div>
         <p class="copyright">&copy; Matt Schaefer</p>
