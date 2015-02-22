@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="255.1181"
-   height="372.04724"
+   width="247.75749"
+   height="368.03488"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="logo.svg"
+   sodipodi:docname="logo-03.svg"
    inkscape:export-filename="/home/mschaefer/Desktop/02-extra-large.png"
    inkscape:export-xdpi="743.71997"
    inkscape:export-ydpi="743.71997">
@@ -28,10 +28,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="85.17534"
-     inkscape:cy="198.25609"
+     inkscape:cx="25.832439"
+     inkscape:cy="163.12001"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3805"
      showgrid="false"
      units="cm"
      inkscape:window-width="1317"
@@ -39,14 +39,20 @@
      inkscape:window-x="49"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     showguides="false">
+     showguides="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <inkscape:grid
        type="xygrid"
        id="grid3810"
        empspacing="5"
        visible="true"
        enabled="true"
-       snapvisiblegridlinesonly="true" />
+       snapvisiblegridlinesonly="true"
+       originx="-59.342901px"
+       originy="-35.136083px" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -64,10 +70,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-680.31244)">
+     transform="translate(-59.342901,-649.18872)">
     <g
        id="g3793"
-       transform="translate(-35.907478,-2.909982)">
+       transform="translate(20.092522,-35.909982)">
       <rect
          y="943.10931"
          x="140.93033"
@@ -85,49 +91,34 @@
     </g>
     <g
        id="g3805"
-       transform="translate(-49.992117,-2.909982)">
-      <rect
-         y="847.505"
-         x="89.154724"
-         height="34.118874"
-         width="51.835407"
+       transform="translate(6.007883,-35.909982)">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.31419754;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 95.15625,197.53125 0,34.125 51.84375,0 0,-34.125 -51.84375,0 z M 60,215.625 l 0,69.34375 33.90625,0 0,-69.34375 -33.90625,0 z m 35.15625,63.40625 0,34.125 51.84375,0 0,-34.125 -51.84375,0 z"
+         transform="translate(-6.007883,649.96261)"
          id="rect2993-3-4-9-6-3"
-         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.31419754;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <rect
-         y="865.57874"
-         x="53.995983"
-         height="69.350533"
-         width="33.917465"
-         id="rect2993-3-4-9-6-71"
-         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.51560724;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <rect
-         y="929.0011"
-         x="89.154724"
-         height="34.11887"
-         width="51.835407"
-         id="rect2993-3-4-9-6-2"
-         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.31419754;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+         inkscape:connector-curvature="0" />
     </g>
     <rect
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.07372952;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect2993-3-4-9-6-1"
        width="34.359341"
        height="34.359341"
-       x="142.45634"
-       y="777.27008" />
+       x="198.45634"
+       y="744.27008" />
     <rect
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.07372952;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect2993-3-4-9-6-0"
        width="34.359341"
        height="34.359341"
-       x="164.45634"
-       y="728.27008" />
+       x="220.45634"
+       y="695.27008" />
     <rect
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.07372952;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect2993-3-4-9-6-8"
        width="34.359341"
        height="34.359341"
-       x="131.45634"
-       y="682.72559" />
+       x="187.45634"
+       y="649.72559" />
   </g>
 </svg>
