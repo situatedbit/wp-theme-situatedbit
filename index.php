@@ -7,7 +7,7 @@ if ( have_posts() ) : ?>
 
   <?php
     while ( have_posts() ) : the_post();
-      get_template_part( 'content', get_post_format() );
+      get_template_part( 'template-parts/content', get_post_format() );
     endwhile;
 
 		the_posts_pagination( array(
