@@ -372,8 +372,13 @@ a:hover {
     padding: 15px;
   }
 
-  .navigation.pagination .page-numbers.current {
+  .navigation.pagination .page-numbers.current,
+  .navigation.pagination .page-numbers.dots {
     background-color: white;
+  }
+
+  .navigation.pagination .page-numbers.dots {
+    border-color: white;
   }
 
   .navigation.pagination .page-numbers:hover {
