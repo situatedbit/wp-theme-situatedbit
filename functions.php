@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support('post-thumbnails');
+
 add_editor_style('css/editor-style.css');
 
 include('functions/dynamic_sidebars.php');

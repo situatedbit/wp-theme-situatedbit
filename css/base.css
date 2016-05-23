@@ -178,6 +178,10 @@ a:hover {
         color: #720040;
       }
 
+  .post-footer {
+    clear: both;
+  }
+
   .post .post-meta {
     font-size: .85em;
     color: #3f3f3f;
@@ -214,14 +218,42 @@ a:hover {
   .post-content figure,
   .post-content img {
     max-width: 100%;
-    height: auto;
   }
+
+  .post-content img {
+    height: auto;
+    max-height: 95vh;
+  }
+
+    .post-content img.vertical {
+      width: auto;
+    }
+
+    .post-content img.horizontal {
+    }
 
   .post-content figcaption {
     font-size: .85em;
     font-style: italic;
   }
 
+  .post-excerpt {
+    clear: both;
+  }
+
+    .post-excerpt .post-excerpt-thumbnail {
+      float: left;
+      margin-bottom: 1em;
+      width: 150px;
+    }
+
+    .post-excerpt.with-thumbnail .post-excerpt-text {
+      margin-left: 160px;
+    }
+
+    .post-excerpt .post-excerpt-text {
+      margin-left: 0px;
+    }
 
   .post li {
     list-style-position: inside;
