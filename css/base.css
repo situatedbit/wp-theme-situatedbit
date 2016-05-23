@@ -232,14 +232,30 @@ a:hover {
     .post-content img.horizontal {
     }
 
+  .wp-caption-text,
   .post-content figcaption {
     font-size: .85em;
     font-style: italic;
+    margin-top: .25em;
   }
 
   .post-excerpt {
-    clear: both;
+    overflow: auto;
   }
+
+    .post-excerpt:hover {
+      background-color: #efefef;
+    }
+
+    .post-excerpt .post-excerpt-link {
+      display: block;
+      overflow: auto;
+    }
+
+    .post-excerpt .post-excerpt-link:hover,
+    .post-excerpt .post-excerpt-link:active {
+      text-decoration: none;
+    }
 
     .post-excerpt .post-excerpt-thumbnail {
       float: left;
