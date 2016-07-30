@@ -74,7 +74,7 @@ body {
   background-color: #efefef;
   font-family: 'sorts-mill', serif;
   font-weight: normal;
-  font-style: normal; 
+  font-style: normal;
   margin: 0;
   padding: 0;
 }
@@ -161,6 +161,10 @@ a:hover {
       text-decoration: none;
     }
 
+article {
+  position: relative;
+}
+
 .post {
   margin-top: .5em;
   margin-bottom: 2em;
@@ -172,7 +176,7 @@ a:hover {
 
     .post-header h1 {
       margin-bottom: 0;
-    }  
+    }
 
       .post-header h1 a {
         color: #720040;
@@ -236,38 +240,43 @@ a:hover {
   .post-content figcaption {
     font-size: .85em;
     font-style: italic;
+    margin-bottom: 1.5em;
     margin-top: .25em;
   }
 
-  .post-excerpt {
-    overflow: auto;
+  .excerpt.has-thumbnail {
+    min-height: 150px;
   }
 
-    .post-excerpt:hover {
+  .excerpt.has-thumbnail .post-header,
+  .excerpt.has-thumbnail .excerpt-body,
+  .excerpt.has-thumbnail .post-footer {
+    margin-left: 170px;
+  }
+
+    .excerpt:hover {
       background-color: #efefef;
     }
 
-    .post-excerpt .post-excerpt-link {
+    .excerpt .excerpt-link {
       display: block;
       overflow: auto;
     }
 
-    .post-excerpt .post-excerpt-link:hover,
-    .post-excerpt .post-excerpt-link:active {
+    .excerpt .excerpt-link:hover,
+    .excerpt .excerpt-link:active {
       text-decoration: none;
     }
 
-    .post-excerpt .post-excerpt-thumbnail {
-      float: left;
+    .excerpt .excerpt-thumbnail {
+      position: absolute;
+      left: 0;
       margin-bottom: 1em;
+      top: 0;
       width: 150px;
     }
 
-    .post-excerpt.with-thumbnail .post-excerpt-text {
-      margin-left: 160px;
-    }
-
-    .post-excerpt .post-excerpt-text {
+    .excerpt .excerpt-text {
       margin-left: 0px;
     }
 
@@ -525,14 +534,36 @@ a:hover {
 } /* media query: 480 */
 
 @media screen and (max-width: 320px) {
-    #footer #footer-bio {
-      width: 100%;
-    }
+  .excerpt.has-thumbnail {
+    min-height: 0;
+  }
 
-    #footer #footer-portrait {
-      width: 0;
-      height: 0;
-    }
+  .excerpt .excerpt-thumbnail {
+    left: auto;
+    position: relative;
+    top: auto;
+    width: 100%;
+  }
+
+  .excerpt .excerpt-thumbnail img {
+    height: auto;
+    width: 100%;
+  }
+
+  .excerpt.has-thumbnail .post-header,
+  .excerpt.has-thumbnail .excerpt-body,
+  .excerpt.has-thumbnail .post-footer {
+    margin-left: auto;
+  }
+
+  #footer #footer-bio {
+    width: 100%;
+  }
+
+  #footer #footer-portrait {
+    width: 0;
+    height: 0;
+  }
 } /* media query: 320 */
 
 

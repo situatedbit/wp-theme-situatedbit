@@ -1,13 +1,7 @@
-	  <div class="post-excerpt <?php if(has_post_thumbnail()) {?>with-thumbnail<?php } ?>">
-      <a class="post-excerpt-link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">      
-        <?php if(has_post_thumbnail()) : ?>
-          <div class="post-excerpt-thumbnail">
-            <?php the_post_thumbnail('thumbnail'); ?>
-          </div>
-        <?php endif; ?>
+<article id="post-<?php the_ID(); ?>" class="post excerpt <?php if(has_post_thumbnail()) : ?>has-thumbnail<?php endif; ?>">
+  <?php get_template_part('template-parts/post-header'); ?>
 
-	      <div class="post-excerpt-text">
-		      <?php the_excerpt(); ?>
-        </div>
-      </a>
-	  </div><!-- .post-excerpt -->
+  <?php get_template_part('template-parts/post-excerpt-body'); ?>
+
+  <?php get_template_part('template-parts/post-footer'); ?>
+</article><!-- #post-<?php the_ID(); ?> -->
