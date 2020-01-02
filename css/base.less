@@ -1,3 +1,14 @@
+@page-background-color: hsl(59, 100%, 98%);
+@page-text-color: hsl(0, 20%, 1%);
+@page-text-link-color: @page-text-color;
+@page-text-meta-color: @page-text-color;
+@page-text-meta-color-secondary: lighten(@page-text-color, 10%);
+
+@object-background-color: #EEEEE1;
+@object-border-color: #D4D3AF;
+@object-text-color: @page-text-color;
+@object-text-link-color: @object-text-color;
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -52,7 +63,7 @@ table {
 @font-face {
     font-family: 'sorts-mill';
     src: url('fonts/sorts-mill/GoudyStM-Italic-webfont.eot');
-    src: url('fonts/sorts-mill/GoudyStM-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('fonts/sorts-mill/GoudyStM-Italic-webfont.eot?iefix') format('embedded-opentype'),
          url('fonts/sorts-mill/GoudyStM-Italic-webfont.woff') format('woff'),
          url('fonts/sorts-mill/GoudyStM-Italic-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -71,7 +82,8 @@ table {
 }
 
 body {
-  background-color: #efefef;
+	background-color: @page-background-color;
+	color: @page-text-color;
   font-family: 'sorts-mill', serif;
   font-weight: normal;
   font-style: normal;
@@ -115,11 +127,20 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
-}
+  color: @page-text-link-color;
 
-a:hover {
-  text-decoration: underline;
+	:active {
+		color: @page-text-link-color;
+	}
+
+	:hover {
+		color: @page-text-link-color;
+		text-decoration: underline;
+	}
+
+	:visited {
+		color: @page-text-link-color;
+	}
 }
 
 .constrained-layout {
@@ -128,17 +149,16 @@ a:hover {
 }
 
 #content {
-  background-color: white;
   margin: 0 auto;
 }
 
 #main {
-  margin: auto;
+	margin: auto;
 }
 
 #header {
-  background-color: white;
-  border-bottom: 1px solid #dfdfdf;
+  background-color: @page-background-color;
+  border-bottom: 1px solid @object-border-color;
   padding: 1em 0 .25em 0;
   margin: auto;
   margin-bottom: 1.75em;
@@ -178,22 +198,18 @@ article {
       margin-bottom: 0;
     }
 
-      .post-header h1 a {
-        color: #720040;
-      }
-
   .post-footer {
     clear: both;
   }
 
   .post .post-meta {
     font-size: .85em;
-    color: #3f3f3f;
+    color: @page-text-meta-color;
     margin: .25em auto;
   }
 
     .post .post-meta a {
-      color: #3f3f3f;
+      color: @page-text-meta-color;
       text-decoration: none;
     }
 
@@ -255,7 +271,7 @@ article {
   }
 
     .excerpt:hover {
-      background-color: #efefef;
+      background-color: @object-background-color;
     }
 
     .excerpt .excerpt-link {
@@ -315,7 +331,7 @@ article {
 
   .post .post-footer,
   .post .post-footer a {
-    color: #3f3f3f;
+    color: @page-text-meta-color;
   }
 
     .post .tags {
@@ -325,7 +341,7 @@ article {
       .post .post-footer .tags:before,
       .post .post-footer .tags:after,
       .post .post-footer .tags li:after {
-        color: #afafaf;
+        color: @page-text-meta-color-secondary;
       }
 
       .post .tags:before {
@@ -373,7 +389,7 @@ article {
   }
 
   .navigation.pagination .page-numbers {
-    background-color: #efefef;
+    background-color: @object-background-color;
     display: inline-block;
     border: 1px solid #bfbfbf;
     border-radius: 2px;
@@ -383,20 +399,20 @@ article {
 
   .navigation.pagination .page-numbers.current,
   .navigation.pagination .page-numbers.dots {
-    background-color: white;
+    background-color: @page-background-color;
   }
 
   .navigation.pagination .page-numbers.dots {
-    border-color: white;
+    border-color: @page-background-color;
   }
 
   .navigation.pagination .page-numbers:hover {
-    background-color: white;
+    background-color: @page-background-color;
   }
 
 #footer {
-  background-color: #efefef;
-  border-top: 1px solid #bfbfbf;
+  background-color: @object-background-color;
+  border-top: 1px solid @object-border-color;
   padding-top: .5em;
   margin-top: .5em;
   width: 100%;
@@ -450,7 +466,7 @@ article {
     }
 
   #footer .copyright {
-    color: #afafaf;
+    color: @object-text-color;
     clear: both;
     text-align: center;
     width: 100%;
