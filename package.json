@@ -1,0 +1,14 @@
+{
+  "name": "wp-theme-situatedbit",
+  "version": "0.2.0",
+  "description": "A Wordpress theme for situatedbit.com.",
+  "license": "GPL-2.0-only",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/situatedbit/wp-theme-situatedbit.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "less": "^2.7.1"
+  }
+}
