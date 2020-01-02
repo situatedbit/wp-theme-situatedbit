@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/situatedbit/wp-theme-situatedbit.git"
   },
+  "scripts": {
+    "build:css": "./node_modules/less/bin/lessc css/base.less css/base.css"
+  },
   "dependencies": {},
   "devDependencies": {
     "less": "^2.7.1"
