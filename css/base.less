@@ -413,112 +413,53 @@ article {
 #footer {
   background-color: @object-background-color;
   border-top: 1px solid @object-border-color;
+	padding-bottom: .5em;
   padding-top: .5em;
-  margin-top: .5em;
+	margin-top: .5em;
   width: 100%;
-}
 
-  #footer a {
-    text-decoration: underline;
-  }
+	a {
+		text-decoration: underline;
+	}
 
-  .footer-wrapper {
-    margin: auto;
-    overflow: auto;
-  }
+	.footer-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: auto;
 
-  #footer .menu-footer-container {
-    float: left;
-    width: 25%;
-  }
+		.footer-item {
+			flex: 1 0 0;
+			max-width: 25em;
+			min-width: 15em;
+		}
 
-  #footer #footer-bio-wrapper {
-    float: left;
-    width: 75%;
-  }
+		.footer-bio {
+			font-style: italic;
+			.footer-item();
 
-    #footer #footer-bio {
-      list-style: none;
-      float: left;
-      width: 58%;
-    }
-
-      #footer #footer-bio li {
+			&, li {
         list-style: none;
       }
+		}
 
-    #footer #footer-portrait {
-      float: right;
-      width: 38%;
-    }
+		.menu-footer-container {
+			.footer-item();
 
-  #footer .menu {
-    overflow: auto;
-  }
+			.menu {
+				a, li {
+					width: 100%;
+				}
 
-  #footer .menu li {
-    margin: auto;
-    margin-bottom: 1.25em;
-  }
-
-    #footer .menu a {
-      width: 100%;
-    }
-
-  #footer .copyright {
-    color: @object-text-color;
-    clear: both;
-    text-align: center;
-    width: 100%;
-  }
+				li {
+					margin-bottom: 1.25em;
+				}
+			}
+	  }
+	} /* .footer-wrapper */
+} /* #footer */
 
 /* Media Queries */
-@media screen and (max-width: 1024px) {
-} /* media query: 1024 */
-
-@media screen and (max-width: 768px) {
-
-/* there's a bug in the footer: things get squishy with the menu */
-
-  #footer .menu-footer-container {
-    float: none;
-    width: 100%;
-  }
-
-    #footer .menu {
-      height: 3em;
-      margin: auto;
-    }
-
-    #footer .menu li {
-      float: left;
-      margin-right: 3em;
-    }
-
-      #footer .menu a {
-        width: auto;
-      }
-
-  #footer #footer-bio-wrapper {
-    width: 100%;
-  }
-
-  #footer #footer-bio {
-    width: 48%;
-  }
-
-  #footer #footer-portrait {
-    width: 48%;
-  }
-} /* media query: 768 */
-
-@media screen and (max-width: 640px) {
-  #footer .menu-footer-container,
-  #footer #footer-bio-wrapper {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 480px) {
   /* scale by factor of .85 */
   h1 { font-size: 1.9125em; }
@@ -533,20 +474,6 @@ article {
   #header #logo {
     font-size: 2.5em;
   }
-
-  #footer .menu {
-    height: auto;
-    overflow: auto;
-  }
-
-  #footer .menu li {
-    float: none;
-    margin-right: auto;
-  }
-
-    #footer .menu a {
-      width: auto;
-    }
 } /* media query: 480 */
 
 @media screen and (max-width: 320px) {
@@ -570,15 +497,6 @@ article {
   .excerpt.has-thumbnail .excerpt-body,
   .excerpt.has-thumbnail .post-footer {
     margin-left: auto;
-  }
-
-  #footer #footer-bio {
-    width: 100%;
-  }
-
-  #footer #footer-portrait {
-    width: 0;
-    height: 0;
   }
 } /* media query: 320 */
 
