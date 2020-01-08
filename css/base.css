@@ -142,8 +142,8 @@ table {
   font-style: normal;
 }
 body {
-  background-color: #fffff5;
-  color: #030202;
+  background-color: hsl(59, 100%, 98%);
+  color: hsl(0, 20%, 1%);
   font-family: 'sorts-mill', serif;
   font-weight: normal;
   font-style: normal;
@@ -193,17 +193,17 @@ img {
 }
 a {
   text-decoration: none;
-  color: #030202;
+  color: hsl(0, 20%, 1%);
 }
 a :active {
-  color: #030202;
+  color: hsl(0, 20%, 1%);
 }
 a :hover {
-  color: #030202;
+  color: hsl(0, 20%, 1%);
   text-decoration: underline;
 }
 a :visited {
-  color: #030202;
+  color: hsl(0, 20%, 1%);
 }
 .constrained-layout {
   max-width: 45em;
@@ -216,9 +216,9 @@ a :visited {
   margin: auto;
 }
 #header {
-  background-color: #fffff5;
+  background-color: hsl(59, 100%, 98%);
   border-bottom: 1px solid #D4D3AF;
-  padding: 1em 0 .25em 0;
+  padding: 1em 0 0.25em 0;
   margin: auto;
   margin-bottom: 1.75em;
 }
@@ -241,7 +241,7 @@ article {
   position: relative;
 }
 .post {
-  margin-top: .5em;
+  margin-top: 0.5em;
   margin-bottom: 2em;
 }
 .post-header {
@@ -254,12 +254,12 @@ article {
   clear: both;
 }
 .post .post-meta {
-  font-size: .85em;
-  color: #030202;
-  margin: .25em auto;
+  font-size: 0.85em;
+  color: hsl(0, 20%, 1%);
+  margin: 0.25em auto;
 }
 .post .post-meta a {
-  color: #030202;
+  color: hsl(0, 20%, 1%);
   text-decoration: none;
 }
 .post .post-meta a:hover {
@@ -290,10 +290,10 @@ article {
 }
 .wp-caption-text,
 .post-content figcaption {
-  font-size: .85em;
+  font-size: 0.85em;
   font-style: italic;
   margin-bottom: 1.5em;
-  margin-top: .25em;
+  margin-top: 0.25em;
 }
 .excerpt.has-thumbnail {
   min-height: 150px;
@@ -352,7 +352,7 @@ article {
 }
 .post .post-footer,
 .post .post-footer a {
-  color: #030202;
+  color: hsl(0, 20%, 1%);
 }
 .post .tags {
   display: inline;
@@ -360,7 +360,7 @@ article {
 .post .post-footer .tags:before,
 .post .post-footer .tags:after,
 .post .post-footer .tags li:after {
-  color: #221616;
+  color: hsl(0, 20%, 11%);
 }
 .post .tags:before {
   content: '';
@@ -380,7 +380,7 @@ article {
 .post .tags li:after {
   content: ' |';
   margin: auto;
-  margin-right: .35em;
+  margin-right: 0.35em;
 }
 .navigation.pagination {
   overflow: auto;
@@ -403,25 +403,25 @@ article {
   display: inline-block;
   border: 1px solid #bfbfbf;
   border-radius: 2px;
-  margin-right: .5em;
+  margin-right: 0.5em;
   padding: 15px;
 }
 .navigation.pagination .page-numbers.current,
 .navigation.pagination .page-numbers.dots {
-  background-color: #fffff5;
+  background-color: hsl(59, 100%, 98%);
 }
 .navigation.pagination .page-numbers.dots {
-  border-color: #fffff5;
+  border-color: hsl(59, 100%, 98%);
 }
 .navigation.pagination .page-numbers:hover {
-  background-color: #fffff5;
+  background-color: hsl(59, 100%, 98%);
 }
 #footer {
   background-color: #EEEEE1;
   border-top: 1px solid #D4D3AF;
-  padding-bottom: .5em;
-  padding-top: .5em;
-  margin-top: .5em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  margin-top: 0.5em;
   width: 100%;
   /* .footer-wrapper */
 }

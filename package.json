@@ -12,6 +12,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "less": "^2.7.1"
+    "less": "^3.10.3"
   }
 }
