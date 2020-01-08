@@ -286,8 +286,6 @@ article {
 .post-content img {
   height: auto;
   max-height: 95vh;
-}
-.post-content img.vertical {
   width: auto;
 }
 .wp-caption-text,
