@@ -22,5 +22,5 @@
     <header id="header" class="constrained-layout">
       <a href="<?php echo site_url() ?>" title="Home"><h1 id="logo"><?php bloginfo( 'name' ); ?></h1></a>
     </header> <!-- #header -->
-    <div id="main" class="constrained-layout">
+    <main id="main" class="constrained-layout">
 <!-- end: header -->
