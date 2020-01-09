@@ -290,7 +290,7 @@ article {
 .post.excerpt.has-thumbnail .post-header,
 .post.excerpt.has-thumbnail .excerpt-body,
 .post.excerpt.has-thumbnail .post-footer {
-  margin-left: calc(20% + 1rem);
+  margin-left: calc(25% + 1rem);
 }
 @media screen and (max-width: 20rem) {
   .post.excerpt.has-thumbnail .post-header,
@@ -304,7 +304,7 @@ article {
   left: 0;
   margin-bottom: 1em;
   top: 0;
-  width: 20%;
+  width: 25%;
 }
 @media screen and (max-width: 20rem) {
   .post.excerpt .excerpt-thumbnail {

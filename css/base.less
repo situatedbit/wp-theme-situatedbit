@@ -222,6 +222,8 @@ article {
   margin-bottom: 2em;
 
 	&.excerpt {
+		@thumbnail-width: 25%;
+
 		&:hover {
 			background-color: @object-background-color;
 		}
@@ -236,7 +238,7 @@ article {
 			.post-header,
 			.excerpt-body,
 			.post-footer {
-				margin-left: calc(20% + 1rem);
+				margin-left: calc(@thumbnail-width + 1rem);
 
 				@media @screen-small-break {
 					margin-left: auto;
@@ -249,7 +251,7 @@ article {
       left: 0;
       margin-bottom: 1em;
       top: 0;
-      width: 20%;
+      width: @thumbnail-width;
 
 			@media @screen-small-break {
 		    left: auto;
