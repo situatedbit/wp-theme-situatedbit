@@ -272,6 +272,7 @@ article {
   grid-gap: 1.2em;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.2em;
+  margin-bottom: 1.2em;
 }
 .posts .post {
   /* .exerpt */
