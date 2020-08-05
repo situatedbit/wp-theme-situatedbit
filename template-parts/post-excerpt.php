@@ -3,5 +3,5 @@
 
   <?php get_template_part('template-parts/post-excerpt-body'); ?>
 
-  <?php get_template_part('template-parts/post-footer'); ?>
+  <?php get_template_part('template-parts/post-excerpt-footer'); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

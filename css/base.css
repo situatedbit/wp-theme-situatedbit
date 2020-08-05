@@ -340,7 +340,6 @@ article {
 }
 .posts .post .post-footer {
   clear: both;
-  /* .tags */
 }
 .posts .post .post-footer,
 .posts .post .post-footer a {
@@ -370,6 +369,23 @@ article {
 .posts .post .post-footer .tags li:last-child:after {
   content: '';
   margin: 0;
+}
+.posts .post .post-footer nav {
+  margin-top: 3.8em;
+}
+.posts .post .post-footer nav ol {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.posts .post .post-footer nav ol li {
+  list-style-type: none;
+  max-width: 10em;
+  padding: 0;
+  text-indent: 0;
+}
+.posts .post .post-footer nav ol img {
+  height: auto;
 }
 .posts .post .post-meta {
   font-size: 0.85rem;
