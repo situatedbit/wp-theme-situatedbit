@@ -25,7 +25,6 @@ function sb_categories($post_id) {
 
 function sb_post_footer_nav_item($options) {
   $default_options = [
-    'thumbnail_size' => 'thumbnail',
     'link_prefix' => '',
     'link_suffix' => '',
     'rel' => '',
@@ -34,7 +33,6 @@ function sb_post_footer_nav_item($options) {
   $params = array_merge($default_options, $options);
 
   $post = $params['post'];
-  $thumbnail_size = $params['thumbnail_size'];
   $link_prefix = $params['link_prefix'];
   $link_suffix = $params['link_suffix'];
   $rel = $params['rel'];
@@ -43,13 +41,8 @@ function sb_post_footer_nav_item($options) {
   $item = '';
 
   if (is_a($post, 'WP_Post')) {
-    $post_thumbnail = has_post_thumbnail($post) ? get_the_post_thumbnail($post, $thumbnail_size) : '';
-
     $item .= '<a href="' . get_permalink($post->ID) . '" title="' . $title . '" rel="' . $rel . '">' .
-               $post_thumbnail .
-               '<span class="prefix">' . $link_prefix . '</span>' .
-               '<span class="title">' . get_the_title($post->ID) . '</span>' .
-               '<span class="suffix">' . $link_suffix . '</span>' .
+               $link_prefix . get_the_title($post->ID) . $link_suffix .
              '</a>';
   }
 

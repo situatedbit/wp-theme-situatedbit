@@ -12,6 +12,15 @@
 @screen-medium-break: ~"screen and (max-width: 30rem)";
 @screen-small-break: ~"screen and (max-width: 20rem)";
 
+.content-link {
+  text-decoration: underline;
+
+  &:hover {
+    -moz-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+  }
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -267,16 +276,26 @@ article {
       h1 {
         margin-bottom: 0;
       }
+
+      .post-meta {
+        a {
+          color: @page-text-meta-color;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .post-category {
+          text-transform: lowercase;
+        }
+      }
     }
 
     .post-content {
       a {
-        text-decoration: underline;
-
-        &:hover {
-          -moz-text-decoration-style: dotted;
-          text-decoration-style: dotted;
-        }
+        .content-link;
       }
 
       figure {
@@ -307,6 +326,10 @@ article {
       &,
       a {
         color: @page-text-meta-color;
+      }
+
+      a {
+        .content-link;
       }
 
       .tags {
@@ -343,7 +366,8 @@ article {
       }
 
       nav {
-        margin-top: 3.8em;
+        margin-top: 5 * @default-line-height-length;
+        margin-bottom: 2 * @default-line-height-length;
 
         ol {
           display: flex;
@@ -352,13 +376,14 @@ article {
 
           li {
             list-style-type: none;
-            max-width: 10em;
+            max-width: 40%;
             padding: 0;
             text-indent: 0;
-          }
+            width: 20em;
 
-          img {
-            height: auto;
+            &:last-child {
+              text-align: right;
+            }
           }
         }
       }
@@ -368,19 +393,6 @@ article {
       font-size: .85rem;
       color: @page-text-meta-color;
       margin: .25em auto;
-
-      a {
-        color: @page-text-meta-color;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      .post-category {
-        text-transform: lowercase;
-      }
     }
 
     .alignleft {

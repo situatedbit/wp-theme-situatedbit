@@ -1,3 +1,10 @@
+.content-link {
+  text-decoration: underline;
+}
+.content-link:hover {
+  -moz-text-decoration-style: dotted;
+  text-decoration-style: dotted;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -314,6 +321,16 @@ article {
 .posts .post .post-header h1 {
   margin-bottom: 0;
 }
+.posts .post .post-header .post-meta a {
+  color: hsl(0, 20%, 1%);
+  text-decoration: none;
+}
+.posts .post .post-header .post-meta a:hover {
+  text-decoration: underline;
+}
+.posts .post .post-header .post-meta .post-category {
+  text-transform: lowercase;
+}
 .posts .post .post-content a {
   text-decoration: underline;
 }
@@ -345,6 +362,13 @@ article {
 .posts .post .post-footer a {
   color: hsl(0, 20%, 1%);
 }
+.posts .post .post-footer a {
+  text-decoration: underline;
+}
+.posts .post .post-footer a:hover {
+  -moz-text-decoration-style: dotted;
+  text-decoration-style: dotted;
+}
 .posts .post .post-footer .tags:after {
   content: '';
 }
@@ -371,7 +395,8 @@ article {
   margin: 0;
 }
 .posts .post .post-footer nav {
-  margin-top: 3.8em;
+  margin-top: 6em;
+  margin-bottom: 2.4em;
 }
 .posts .post .post-footer nav ol {
   display: flex;
@@ -380,27 +405,18 @@ article {
 }
 .posts .post .post-footer nav ol li {
   list-style-type: none;
-  max-width: 10em;
+  max-width: 40%;
   padding: 0;
   text-indent: 0;
+  width: 20em;
 }
-.posts .post .post-footer nav ol img {
-  height: auto;
+.posts .post .post-footer nav ol li:last-child {
+  text-align: right;
 }
 .posts .post .post-meta {
   font-size: 0.85rem;
   color: hsl(0, 20%, 1%);
   margin: 0.25em auto;
-}
-.posts .post .post-meta a {
-  color: hsl(0, 20%, 1%);
-  text-decoration: none;
-}
-.posts .post .post-meta a:hover {
-  text-decoration: underline;
-}
-.posts .post .post-meta .post-category {
-  text-transform: lowercase;
 }
 .posts .post .alignleft {
   float: left;
