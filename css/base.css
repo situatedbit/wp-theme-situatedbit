@@ -231,6 +231,14 @@ a :hover {
 a :visited {
   color: hsl(0, 20%, 1%);
 }
+form label,
+form input {
+  margin-bottom: 0.2em;
+  display: block;
+}
+form input[type="submit"] {
+  margin-top: 1em;
+}
 .constrained-layout {
   max-width: 45rem;
   width: 96%;
