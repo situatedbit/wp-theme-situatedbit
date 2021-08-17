@@ -231,6 +231,14 @@ a :hover {
 a :visited {
   color: hsl(0, 20%, 1%);
 }
+blockquote {
+  font-style: italic;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+blockquote cite:before {
+  content: '– ';
+}
 form label,
 form input {
   margin-bottom: 0.2em;

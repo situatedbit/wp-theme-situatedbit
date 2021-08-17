@@ -176,6 +176,18 @@ a {
   }
 }
 
+blockquote {
+  font-style: italic;
+  margin-left: 2em;
+  margin-right: 2em;
+
+  cite {
+    &:before {
+      content: '– ';
+    }
+  }
+}
+
 form {
   label,
   input {
