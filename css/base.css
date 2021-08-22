@@ -240,12 +240,60 @@ blockquote cite:before {
   content: '– ';
 }
 form label,
-form input {
+form input,
+form textarea {
   margin-bottom: 0.2em;
   display: block;
 }
+form label.single-width,
+form input.single-width,
+form textarea.single-width {
+  min-width: 20em;
+  width: 40%;
+}
+@media screen and (max-width: 20rem) {
+  form label.single-width,
+  form input.single-width,
+  form textarea.single-width {
+    width: 100%;
+  }
+}
+form label.double-width,
+form input.double-width,
+form textarea.double-width {
+  width: 80%;
+}
+@media screen and (max-width: 30rem) {
+  form label.double-width,
+  form input.double-width,
+  form textarea.double-width {
+    width: 100%;
+  }
+}
 form input[type="submit"] {
   margin-top: 1em;
+  min-width: 5em;
+}
+/* Rules specific to Contact Form 7 plugin */
+.wpcf7 form.sent p {
+  display: none;
+}
+.wpcf7 form label .wpcf7-not-valid-tip,
+.wpcf7 form input .wpcf7-not-valid-tip,
+.wpcf7 form textarea .wpcf7-not-valid-tip {
+  font-style: italic;
+  color: hsl(0, 20%, 1%);
+}
+.wpcf7 form label .wpcf7-not-valid-tip:before,
+.wpcf7 form input .wpcf7-not-valid-tip:before,
+.wpcf7 form textarea .wpcf7-not-valid-tip:before {
+  content: '*';
+}
+.wpcf7 form .wpcf7-response-output {
+  border-width: 0;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
 }
 .constrained-layout {
   max-width: 45rem;

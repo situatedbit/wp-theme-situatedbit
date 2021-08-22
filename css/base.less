@@ -190,13 +190,63 @@ blockquote {
 
 form {
   label,
-  input {
+  input,
+  textarea {
     margin-bottom: .2em;
     display: block;
+
+    &.single-width {
+      min-width: 20em;
+      width: 40%;
+
+      @media @screen-small-break {
+        width: 100%;
+      }
+    }
+
+    &.double-width {
+      width: 80%;
+
+      @media @screen-medium-break {
+        width: 100%;
+      }
+    }
   }
 
   input[type="submit"] {
     margin-top: 1em;
+    min-width: 5em;
+  }
+}
+
+/* Rules specific to Contact Form 7 plugin */
+.wpcf7 {
+  form {
+    &.sent {
+      p {
+        display: none;
+      }
+    }
+
+    label,
+    input,
+    textarea {
+      .wpcf7-not-valid-tip {
+        font-style: italic;
+        color: @page-text-color;
+
+        &:before {
+          content: '*';
+        }
+      }
+    }
+
+    .wpcf7-response-output {
+      border-width: 0;
+      font-style: italic;
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 
